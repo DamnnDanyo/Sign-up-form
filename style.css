@@ -2,12 +2,20 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-container{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     width: 80%;
     height: 70%;
+    min-width: 1080px;
+    min-height: 500px;
     
 }
 
