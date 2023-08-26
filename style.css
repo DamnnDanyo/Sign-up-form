@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-container{
+    border: 1px solid black;
+    width: 40%;
+    height: 30%;
+}
