@@ -10,7 +10,7 @@ body{
 
 .card-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid black;
     width: 80%;
     height: 70%;
@@ -21,16 +21,17 @@ body{
 
 .instructions{
     text-align: center;
+    font-size: large;
 }
 
 .form-card{
-    align-self: self-end;
+    align-self: center;
     width: 60%;
-    height: 300px;
+    height: 384px;
 }
 
 form{
-    height: 70%;
+    height: 100%;
 }
 fieldset{
     
