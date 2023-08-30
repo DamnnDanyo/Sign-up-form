@@ -87,11 +87,16 @@ input{
     border-bottom: 1px solid rgb(163, 162, 162);
     outline: none;
     transition: all .5s ease-in-out;
+    
 }
 
 li label{
-    position: absolute;
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
     color: black;
+    float: left;
+    font-size: .9rem;
     cursor: text;
     transition: all .5s ease-in-out;
 }
@@ -100,13 +105,10 @@ li label:after{
     content: '*';
 }
 
-li input:focus{
-    border-bottom: 1px solid black;
-}
 
-li input:focus ~ label{
+li input:focus + label{
     transform: translateY(-1.5rem);
-    font-size: -8rem;
+    font-size: .6rem;
     color: black;
 }
 
