@@ -101,10 +101,10 @@ li label{
     transition: all .5s ease-in-out;
 }
 
-li label:after{
+input:required{
     content: '*';
+    color: red;
 }
-
 
 li input:focus ~ label{
     transform: translateY(-1rem);
