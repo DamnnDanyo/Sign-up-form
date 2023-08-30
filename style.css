@@ -100,6 +100,16 @@ li label:after{
     content: '*';
 }
 
+li input:focus{
+    border-bottom: 1px solid black;
+}
+
+li input:focus ~ label{
+    transform: translateY(-1.5rem);
+    font-size: -8rem;
+    color: black;
+}
+
 .submitButton{
     text-align: center;
 }
