@@ -72,17 +72,32 @@ ul{
     list-style: none;
     columns: 2;
     padding-left: 15px;
+    position: relative;
     
 }
 
 li{
    margin-bottom: 1.5rem;
+   
 }
 
 input{
-    width: 50%;
-    float: right;
-    text-align: left;
+    width: 75%;
+    border: 0;
+    border-bottom: 1px solid rgb(163, 162, 162);
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+li label{
+    position: absolute;
+    color: black;
+    cursor: text;
+    transition: all .5s ease-in-out;
+}
+
+li label:after{
+    content: '*';
 }
 
 .submitButton{
