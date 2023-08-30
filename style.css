@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Dreaming;
+    src: url(fonts/Dreaming.otf);
+}
+
 * {
     box-sizing: border-box;
 }
