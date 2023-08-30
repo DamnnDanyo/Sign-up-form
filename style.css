@@ -29,10 +29,20 @@ body{
 }
 
 .instructions{
-    text-align: center;
+    text-align: start;
     font-size: 2rem;
     font-family: dreaming, serif ;
+    margin-left: 4.5rem;
 
+}
+
+.instructions h1{
+    margin: 0;
+    padding-top: 20px;
+    font-weight: 100;
+}
+.instructions p{
+    margin: 0;
 }
 
 .form-card{
