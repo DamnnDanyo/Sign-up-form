@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Dreaming;
+    font-family: dreaming;
     src: url(fonts/Dreaming.otf);
 }
 
@@ -30,7 +30,9 @@ body{
 
 .instructions{
     text-align: center;
-    font-size: large;
+    font-size: 2rem;
+    font-family: dreaming, serif ;
+
 }
 
 .form-card{
