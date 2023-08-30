@@ -26,6 +26,7 @@ body{
     background-size: cover;
     box-shadow: -1px 13px 20px 0px;
     
+    
 }
 
 .instructions{
@@ -65,15 +66,23 @@ fieldset{
     border:  0;
     height: 298px;
     margin: 1rem;
+    padding-right: 45px;
 }
 ul{
     list-style: none;
     columns: 2;
-    gap: 175px;
+    padding-left: 15px;
+    
 }
 
 li{
-    padding: 5px;
+   margin-bottom: 1.5rem;
+}
+
+input{
+    width: 50%;
+    float: right;
+    text-align: left;
 }
 
 .submitButton{
