@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #b5f1b5;
 }
 
 .card-container{
@@ -18,7 +19,6 @@ body{
     display: flex;
     flex-direction: row;
     flex-shrink: 1;
-    border: 1px solid black;
     width: 1080px;
     height: 500px;
     background-image: url(img/backgound.jpg);
@@ -94,18 +94,22 @@ input{
 
 li label{
     position: relative;
-    bottom: 1.1rem;
+    bottom: .9rem;
     right: -11px;
     width: 75%;
     color: black;
     float: left;
     font-size: .9rem;
+    font-family: Dreaming;
+    font-weight: 900;
     cursor: text;
     transition: all .5s ease-in-out;
 }
 
 label::after{
     content: '*';
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
     color: red;
 }
 
@@ -124,7 +128,7 @@ input[type='email']:required:placeholder-shown:focus ~ label{
 
 input[type='email']:required:placeholder-shown ~ label{
     position: relative;
-    bottom: .1rem;
+    bottom: -.1rem;
     right: -11px;
     width: 75%;
     color: black;
@@ -176,3 +180,40 @@ li input:valid ~ label{
     
    
 }
+
+
+.submit{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #b5f1b5;
+    width: 10rem;
+    height: 2rem;
+    box-shadow: inset -6px -7px 6px -8px black;
+    font-family: Dreaming;
+    font-weight: 900;
+}
+
+.submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -13px;
+    right: 0px;
+    transition: 0.5s;
+  }
+  
+  .submit:hover span {
+    padding-right: 25px;
+  }
+  
+  .submit:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
