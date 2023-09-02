@@ -130,7 +130,7 @@ li label{
     transition: all .5s ease-in-out;
 }
 
-label::after{
+input:required ~ label::after{
     content: '*';
     font-family: 'Courier New', Courier, monospace;
     font-weight: 200;
@@ -176,6 +176,30 @@ input[type='email']:invalid ~ label{
     font-size: .8rem;
     color: black;
 }
+
+input[type='email']:valid{
+    border-bottom: 1px gray;
+}
+
+input[type='tel']placeholder-shown ~ label{
+    position: relative;
+    bottom: -.1rem;
+    right: -11px;
+    width: 75%;
+    color: black;
+    float: left;
+    font-size: .9rem;
+    cursor: text;
+    transition: all .5s ease-in-out;
+}
+
+input[type='tel']:invalid ~ label{
+    transform: translateY(-1rem);
+    font-size: .8rem;
+    color: black;
+}
+
+input[type='tel']placeholder-shown:focus ~ label
 
 input:invalid{
     border-bottom: 1px solid red;
