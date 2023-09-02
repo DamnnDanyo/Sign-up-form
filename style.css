@@ -120,7 +120,7 @@ li label{
     position: relative;
     bottom: .9rem;
     right: -11px;
-    width: 75%;
+    width: 95%;
     color: black;
     float: left;
     font-size: .9rem;
@@ -195,6 +195,7 @@ li input:valid ~ label{
 
 .login{
     text-align: center;
+    font-family: dreaming;
 }
 
 .picture{
@@ -215,6 +216,8 @@ li input:valid ~ label{
     box-shadow: inset -6px -7px 6px -8px black;
     font-family: Dreaming;
     font-weight: 900;
+    position: relative;
+    right: 29px;
 }
 
 .submit span {
