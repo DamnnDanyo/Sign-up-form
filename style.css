@@ -26,9 +26,16 @@ body{
 .logo{
     position: absolute;
     right: 24px;
-    top: -140px;
+    top: -162px;
     width: 400px;
     
+}
+
+.logo-img{
+    position: absolute;
+    right: 139px;
+    top: -9px;
+    width: 200px;
 }
 
 .card-container{
