@@ -181,7 +181,15 @@ input[type='email']:valid{
     border-bottom: 1px gray;
 }
 
-input[type='tel']placeholder-shown ~ label{
+input[type='tel']:placeholder-shown:focus ~ label{
+    transform: translateY(-2rem);
+    font-size: .8rem;
+    color: black;
+    
+}
+
+
+input[type='tel']:placeholder-shown ~ label{
     position: relative;
     bottom: -.1rem;
     right: -11px;
@@ -193,13 +201,24 @@ input[type='tel']placeholder-shown ~ label{
     transition: all .5s ease-in-out;
 }
 
+input[type='tel']:placeholder-shown{
+    border-bottom: 1px solid hsl(0, 0%, 51%);
+    
+}
+
+input[type='tel']:invalid {
+    border-bottom: 1px solid #ff0000;
+}
+
 input[type='tel']:invalid ~ label{
     transform: translateY(-1rem);
     font-size: .8rem;
     color: black;
 }
 
-input[type='tel']placeholder-shown:focus ~ label
+input[type='tel']:valid{
+    border-bottom: 1px gray;
+}
 
 input:invalid{
     border-bottom: 1px solid red;
