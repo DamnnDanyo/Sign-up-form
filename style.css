@@ -14,6 +14,8 @@ body{
     background-color: #dddfd3;
 }
 
+/* Logo styling */
+
 .logo-holder{
     position: absolute;
     width: 100%;
@@ -37,6 +39,8 @@ body{
     top: -9px;
     width: 200px;
 }
+
+/* Card Flow styling */
 
 .card-container{
     position: relative;
@@ -105,6 +109,8 @@ li{
    
 }
 
+/* Default input styling */
+
 input{
     width: 75%;
     border: 0;
@@ -141,6 +147,8 @@ input:focus,
 input:valid{
     border-bottom: 1px gray;
 }
+
+ /* Email input styling */
 
 input[type='email']:required:placeholder-shown:focus ~ label{
     transform: translateY(-2rem);
@@ -181,13 +189,14 @@ input[type='email']:valid{
     border-bottom: 1px gray;
 }
 
+/* Tel input type styling */
+
 input[type='tel']:placeholder-shown:focus ~ label{
     transform: translateY(-2rem);
     font-size: .8rem;
     color: black;
     
 }
-
 
 input[type='tel']:placeholder-shown ~ label{
     position: relative;
@@ -220,6 +229,8 @@ input[type='tel']:valid{
     border-bottom: 1px gray;
 }
 
+/* all other input styling */
+
 input:invalid{
     border-bottom: 1px solid red;
 }
@@ -231,6 +242,8 @@ li input:valid ~ label{
     font-size: .8rem;
     color: black;
 }
+
+/* Button and already have account styling */
 
 .submitButton{
     text-align: center;
@@ -244,15 +257,6 @@ li input:valid ~ label{
     left: -40px;
     font-size: 1rem;
 }
-
-.picture{
-    align-self: center;
-    width: 40%;
-    height: 500px;
-    
-   
-}
-
 
 .submit{
     border: 1px solid black;
@@ -291,3 +295,10 @@ li input:valid ~ label{
     opacity: 1;
     right: 0;
   }
+
+/* picture place holder */  
+  .picture{
+    align-self: center;
+    width: 40%;
+    height: 500px; 
+}
