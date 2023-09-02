@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascal Signup</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="card-container">
@@ -34,7 +35,7 @@
                             <span></span>
                         </li>
                         <li>
-                            <input type="password" name="pwd" id="pwd" required/>
+                            <input type="password" name="pwd" id="pwd" minlength="4" maxlength="12" required/>
                             <label for="pwd">Password</label>
                             <span></span>
 
@@ -51,7 +52,7 @@
 
                         </li>
                         <li>
-                            <input type="password" name="pwdConfirm" id="pwdConfirm" required/>
+                            <input type="password" name="pwdConfirm" id="pwdConfirm" minlength="4" maxlength="12" required/>
                             <label for="pwdConfirm">Confirm Password</label>
                             <span></span>
 
